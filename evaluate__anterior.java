@@ -1,11 +1,8 @@
 public void evaluate(MbMessageAssembly inAssembly) throws MbException {
-		MbOutputTerminal out = getOutputTerminal("out");
-		
+		MbOutputTerminal out = getOutputTerminal("out");		
 		MbMessage inMessage = inAssembly.getMessage();
-		MbMessageAssembly outAssembly = null;
-		 
-		try {
-			
+		MbMessageAssembly outAssembly = null;		 
+		try {		
 			MbMessage newMessage = new MbMessage();
 	        MbElement outRoot = newMessage.getRootElement();
 	        MbElement xmlnscOut = outRoot.createElementAsLastChild(Constantes.DOMAIN_XMLNSC);
